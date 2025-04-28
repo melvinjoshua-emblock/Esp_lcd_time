@@ -1,0 +1,442 @@
+��J��ѹesp32: SPI Mets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 27 2025 13:59:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=18d90h (101776) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=00028db8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=00028ddc vaddr=3ffb0000 size=03f04h ( 16132) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=0002cce8 vaddr=40080000 size=03330h ( 13104) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87944h (555332) map[0m
+[0;32mI (333) esp_image: segment 5: paddr=000b796c vaddr=40083330 size=14490h ( 83088) load[0m
+[0;32mI (377) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (377) boot: Disabling RNG early entropy source...[0m
+[0;32mI (388) cpu_start: Multicore app[0m
+[0;32mI (396) cpu_start: Pro cpu start user code[0m
+[0;32mI (396) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (396) app_init: Application information:[0m
+[0;32mI (396) app_init: Project name:     esp-lcd-time[0m
+[0;32mI (400) app_init: App version:      1[0m
+[0;32mI (404) app_init: Compile time:     Apr 27 2025 13:58:41[0m
+[0;32mI (409) app_init: ELF file SHA256:  084d8b35e...[0m
+[0;32mI (413) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (417) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (421) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (425) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (429) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (435) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (440) heap_init: At 3FFB86F8 len 00027908 (158 KiB): DRAM[0m
+[0;32mI (445) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (451) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (456) heap_init: At 400977C0 len 00008840 (34 KiB): IRAM[0m
+[0;32mI (463) spi_flash: detected chip: generic[0m
+[0;32mI (465) spi_flash: flash io: dio[0m
+[0;33mW (468) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (481) main_task: Started on CPU0[0m
+[0;32mI (491) main_task: Calling app_main()[0m
+[0;32mI (521) wifi:wifi driver task: 3ffc05f0, prio:23, stack:6656, core=0[0m
+[0;32mI (531) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (531) wifi:wifi certification version: v7.0[0m
+[0;32mI (531) wifi:config NVS flash: enabled[0m
+[0;32mI (531) wifi:config nano formatting: disabled[0m
+[0;32mI (531) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (541) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (541) wifi:Init management short buffer num: 32[0m
+[0;32mI (551) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (551) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (561) wifi:Init static rx buffer num: 10[0m
+[0;32mI (561) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (561) wifi_init: rx ba win: 6[0m
+[0;32mI (571) wifi_init: accept mbox: 6[0m
+[0;32mI (571) wifi_init: tcpip mbox: 32[0m
+[0;32mI (571) wifi_init: udp mbox: 6[0m
+[0;32mI (571) wifi_init: tcp mbox: 6[0m
+[0;32mI (581) wifi_init: tcp tx win: 5760[0m
+[0;32mI (581) wifi_init: tcp rx win: 5760[0m
+[0;32mI (581) wifi_init: tcp mss: 1440[0m
+[0;32mI (591) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (591) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (601) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (601) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (691) wifi:mode : sta (d8:bc:38:e5:04:58)[0m
+[0;32mI (691) wifi:enable tsf[0m
+[0;32mI (691) time_sync: Starting SNTP...[0m
+[0;32mI (691) time_sync: Waiting for system time to be set... (1/10)[0m
+[0;32mI (701) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (711) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (721) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (731) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (851) wifi:connected with Airtel_Melvin_5G, aid = 1, channel 6, BW20, bssid = 5c:8c:30:bf:53:89[0m
+[0;32mI (851) wifi:security: WPA2-PSK, phy: bgn, rssi: -66[0m
+[0;32mI (861) wifi:pm start, type: 1[0m
+
+[0;32mI (861) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (901) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (921) wifi:<ba-add>idx:0 (ifx:0, 5c:8c:30:bf:53:89), tid:0, ssn:3, winSize:64[0m
+[0;32mI (2121) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2121) wifi: Wi-Fi Connected Successfully![0m
+[0;32mI (2691) time_sync: Waiting for system time to be set... (2/10)[0m
+[0;32mI (4691) time_sync: Time synchronized successfully![0m
+Current time: 08:49:51
+Current time: 08:49:52
+Current time: 08:49:53
+Current time: 08:49:54
+Current time: 08:49:55
+Current time: 08:49:56
+Current time: 08:49:57
+Current time: 08:49:58
+Current time: 08:49:59
+Current time: 08:50:00
+Current time: 08:50:01
+Current time: 08:50:02
+Current time: 08:50:03
+Current time: 08:50:04
+Current time: 08:50:05
+Current time: 08:50:06
+Current time: 08:50:07
+Current time: 08:50:08
+Current time: 08:50:09
+Current time: 08:50:10
+Current time: 08:50:11
+Current time: 08:50:12
+Current time: 08:50:13
+Current time: 08:50:14
+Current time: 08:50:15
+Current time: 08:50:16
+Current time: 08:50:17
+Current time: 08:50:18
+Current time: 08:50:19
+Current time: 08:50:20
+Current time: 08:50:21
+Current time: 08:50:22
+Current time: 08:50:23
+Current time: 08:50:24
+Current time: 08:50:25
+Current time: 08:50:26
+Current time: 08:50:27
+Current time: 08:50:28
+Current time: 08:50:29
+Current time: 08:50:30
+Current time: 08:50:31
+Current time: 08:50:32
+Current time: 08:50:33
+Current time: 08:50:34
+Current time: 08:50:35
+Current time: 08:50:36
+Current time: 08:50:37
+Current time: 08:50:38
+Current time: 08:50:39
+Current time: 08:50:40
+Current time: 08:50:41
+Current time: 08:50:42
+Current time: 08:50:43
+Current time: 08:50:44
+Current time: 08:50:45
+Current time: 08:50:46
+Current time: 08:50:47
+Current time: 08:50:48
+Current time: 08:50:49
+Current time: 08:50:50
+Current time: 08:50:51
+Current time: 08:50:52
+Current time: 08:50:53
+Current time: 08:50:54
+Current time: 08:50:55
+Current time: 08:50:56
+Current time: 08:50:57
+Current time: 08:50:58
+Current time: 08:50:59
+Current time: 08:51:00
+Current time: 08:51:01
+Current time: 08:51:02
+Current time: 08:51:03
+Current time: 08:51:04
+Current time: 08:51:05
+Current time: 08:51:06
+Current time: 08:51:07
+Current time: 08:51:08
+Current time: 08:51:09
+Current time: 08:51:10
+Current time: 08:51:11
+Current time: 08:51:12
+Current time: 08:51:13
+Current time: 08:51:14
+Current time: 08:51:15
+Current time: 08:51:16
+Current time: 08:51:17
+Current time: 08:51:18
+Current time: 08:51:19
+Current time: 08:51:20
+Current time: 08:51:21
+Current time: 08:51:22
+Current time: 08:51:23
+Current time: 08:51:24
+Current time: 08:51:25
+Current time: 08:51:26
+Current time: 08:51:27
+Current time: 08:51:28
+Current time: 08:51:29
+Current time: 08:51:30
+Current time: 08:51:31
+Current time: 08:51:32
+Current time: 08:51:33
+Current time: 08:51:34
+Current time: 08:51:35
+Current time: 08:51:36
+Current time: 08:51:37
+Current time: 08:51:38
+Current time: 08:51:39
+Current time: 08:51:40
+Current time: 08:51:41
+Current time: 08:51:42
+Current time: 08:51:43
+Current time: 08:51:44
+Current time: 08:51:45
+Current time: 08:51:46
+Current time: 08:51:47
+Current time: 08:51:48
+Current time: 08:51:49
+Current time: 08:51:50
+Current time: 08:51:51
+Current time: 08:51:52
+Current time: 08:51:53
+Current time: 08:51:54
+Current time: 08:51:55
+Current time: 08:51:56
+Current time: 08:51:57
+Current time: 08:51:58
+Current time: 08:51:59
+Current time: 08:52:00
+Current time: 08:52:01
+Current time: 08:52:02
+Current time: 08:52:03
+Current time: 08:52:04
+Current time: 08:52:05
+Current time: 08:52:06
+Current time: 08:52:07
+Current time: 08:52:08
+Current time: 08:52:09
+Current time: 08:52:10
+Current time: 08:52:11
+Current time: 08:52:12
+Current time: 08:52:13
+Current time: 08:52:14
+Current time: 08:52:15
+Current time: 08:52:16
+Current time: 08:52:17
+Current time: 08:52:18
+Current time: 08:52:19
+Current time: 08:52:20
+Current time: 08:52:21
+Current time: 08:52:22
+Current time: 08:52:23
+Current time: 08:52:24
+Current time: 08:52:25
+Current time: 08:52:26
+Current time: 08:52:27
+Current time: 08:52:28
+Current time: 08:52:29
+Current time: 08:52:30
+Current time: 08:52:31
+Current time: 08:52:32
+Current time: 08:52:33
+Current time: 08:52:34
+Current time: 08:52:35
+Current time: 08:52:36
+Current time: 08:52:37
+Current time: 08:52:38
+Current time: 08:52:39
+Current time: 08:52:40
+Current time: 08:52:41
+Current time: 08:52:42
+Current time: 08:52:43
+Current time: 08:52:44
+Current time: 08:52:45
+Current time: 08:52:46
+Current time: 08:52:47
+Current time: 08:52:48
+Current time: 08:52:49
+Current time: 08:52:50
+Current time: 08:52:51
+Current time: 08:52:52
+Current time: 08:52:53
+Current time: 08:52:54
+Current time: 08:52:55
+Current time: 08:52:56
+Current time: 08:52:57
+Current time: 08:52:58
+Current time: 08:52:59
+Current time: 08:53:00
+Current time: 08:53:01
+Current time: 08:53:02
+Current time: 08:53:03
+Current time: 08:53:04
+Current time: 08:53:05
+Current time: 08:53:06
+Current time: 08:53:07
+Current time: 08:53:08
+Current time: 08:53:09
+Current time: 08:53:10
+Current time: 08:53:11
+Current time: 08:53:12
+Current time: 08:53:13
+Current time: 08:53:14
+Current time: 08:53:15
+Current time: 08:53:16
+Current time: 08:53:17
+Current time: 08:53:18
+Current time: 08:53:19
+Current time: 08:53:20
+Current time: 08:53:21
+Current time: 08:53:22
+Current time: 08:53:23
+Current time: 08:53:24
+Current time: 08:53:25
+Current time: 08:53:26
+Current time: 08:53:27
+Current time: 08:53:28
+Current time: 08:53:29
+Current time: 08:53:30
+Current time: 08:53:31
+Current time: 08:53:32
+Current time: 08:53:33
+Current time: 08:53:34
+Current time: 08:53:35
+Current time: 08:53:36
+Current time: 08:53:37
+Current time: 08:53:38
+Current time: 08:53:39
+Current time: 08:53:40
+Current time: 08:53:41
+Current time: 08:53:42
+Current time: 08:53:43
+Current time: 08:53:44
+Current time: 08:53:45
+Current time: 08:53:46
+Current time: 08:53:47
+Current time: 08:53:48
+Current time: 08:53:49
+Current time: 08:53:50
+Current time: 08:53:51
+Current time: 08:53:52
+Current time: 08:53:53
+Current time: 08:53:54
+Current time: 08:53:55
+Current time: 08:53:56
+Current time: 08:53:57
+Current time: 08:53:58
+Current time: 08:53:59
+Current time: 08:54:00
+Current time: 08:54:01
+Current time: 08:54:02
+Current time: 08:54:03
+Current time: 08:54:04
+Current time: 08:54:05
+Current time: 08:54:06
+Current time: 08:54:07
+Current time: 08:54:08
+Current time: 08:54:09
+Current time: 08:54:10
+Current time: 08:54:11
+Current time: 08:54:12
+Current time: 08:54:13
+Current time: 08:54:14
+Current time: 08:54:15
+Current time: 08:54:16
+Current time: 08:54:17
+Current time: 08:54:18
+Current time: 08:54:19
+Current time: 08:54:20
+Current time: 08:54:21
+Current time: 08:54:22
+Current time: 08:54:23
+Current time: 08:54:24
+Current time: 08:54:25
+Current time: 08:54:26
+Current time: 08:54:27
+Current time: 08:54:28
+Current time: 08:54:29
+Current time: 08:54:30
+Current time: 08:54:31
+Current time: 08:54:32
+Current time: 08:54:33
+Current time: 08:54:34
+Current time: 08:54:35
+Current time: 08:54:36
+Current time: 08:54:37
+Current time: 08:54:38
+Current time: 08:54:39
+Current time: 08:54:40
+Current time: 08:54:41
+Current time: 08:54:42
+Current time: 08:54:43
+Current time: 08:54:44
+Current time: 08:54:45
+Current time: 08:54:46
+Current time: 08:54:47
+Current time: 08:54:48
+Current time: 08:54:49
+Current time: 08:54:50
+Current time: 08:54:51
+Current time: 08:54:52
+Current time: 08:54:53
+Current time: 08:54:54
+Current time: 08:54:55
+Current time: 08:54:56
+Current time: 08:54:57
+Current time: 08:54:58
+Current time: 08:54:59
+Current time: 08:55:00
+Current time: 08:55:01
+Current time: 08:55:02
+Current time: 08:55:03
+Current time: 08:55:04
+Current time: 08:55:05
+Current time: 08:55:06
+Current time: 08:55:07
+Current time: 08:55:08
+Current time: 08:55:09
+Current time: 08:55:10
+Current time: 08:55:11
+Current time: 08:55:12
+Current time: 08:55:13
+Current time: 08:55:14
+Current time: 08:55:15
+Current time: 08:55:16
+Current time: 08:55:17
+Current time: 08:55:18
+Current time: 08:55:19
+Current time: 08:55:20
+Current time: 08:55:21
+Current time: 08:55:22
+Current time: 08:55:23
+Current time: 08:55:24
+Current time: 08:55:25
+Current time: 08:55:26
+Current time: 08:55:27
+Current time: 08:55:28
+Current time: 08:55:29
+Current time: 08:55:30
+Current time: 08:55:31
+Current time: 08:55:32

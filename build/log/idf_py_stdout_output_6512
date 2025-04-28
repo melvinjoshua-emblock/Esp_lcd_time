@@ -1,0 +1,207 @@
+(39) boot.esp32: �ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 27 2025 13:59:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=18da0h (101792) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=00028dc8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=00028dec vaddr=3ffb0000 size=03f04h ( 16132) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=0002ccf8 vaddr=40080000 size=03320h ( 13088) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87b4ch (555852) map[0m
+[0;32mI (334) esp_image: segment 5: paddr=000b7b74 vaddr=40083320 size=144a0h ( 83104) load[0m
+[0;32mI (377) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (377) boot: Disabling RNG early entropy source...[0m
+[0;32mI (388) cpu_start: Multicore app[0m
+[0;32mI (396) cpu_start: Pro cpu start user code[0m
+[0;32mI (396) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (396) app_init: Application information:[0m
+[0;32mI (396) app_init: Project name:     esp-lcd-time[0m
+[0;32mI (401) app_init: App version:      1[0m
+[0;32mI (404) app_init: Compile time:     Apr 27 2025 13:58:41[0m
+[0;32mI (409) app_init: ELF file SHA256:  edabc0dec...[0m
+[0;32mI (413) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (417) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (421) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (425) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (429) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (435) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (440) heap_init: At 3FFB8700 len 00027900 (158 KiB): DRAM[0m
+[0;32mI (445) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (451) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (456) heap_init: At 400977C0 len 00008840 (34 KiB): IRAM[0m
+[0;32mI (463) spi_flash: detected chip: generic[0m
+[0;32mI (465) spi_flash: flash io: dio[0m
+[0;33mW (468) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (481) main_task: Started on CPU0[0m
+[0;32mI (491) main_task: Calling app_main()[0m
+[0;32mI (521) wifi:wifi driver task: 3ffc05f8, prio:23, stack:6656, core=0[0m
+[0;32mI (531) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (531) wifi:wifi certification version: v7.0[0m
+[0;32mI (531) wifi:config NVS flash: enabled[0m
+[0;32mI (531) wifi:config nano formatting: disabled[0m
+[0;32mI (531) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (541) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (541) wifi:Init management short buffer num: 32[0m
+[0;32mI (551) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (551) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (561) wifi:Init static rx buffer num: 10[0m
+[0;32mI (561) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (561) wifi_init: rx ba win: 6[0m
+[0;32mI (571) wifi_init: accept mbox: 6[0m
+[0;32mI (571) wifi_init: tcpip mbox: 32[0m
+[0;32mI (571) wifi_init: udp mbox: 6[0m
+[0;32mI (581) wifi_init: tcp mbox: 6[0m
+[0;32mI (581) wifi_init: tcp tx win: 5760[0m
+[0;32mI (581) wifi_init: tcp rx win: 5760[0m
+[0;32mI (581) wifi_init: tcp mss: 1440[0m
+[0;32mI (591) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (591) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (601) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (601) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (681) wifi:mode : sta (d8:bc:38:e5:04:58)[0m
+[0;32mI (691) wifi:enable tsf[0m
+[0;32mI (691) time_sync: Starting SNTP...[0m
+[0;32mI (691) time_sync: Waiting for system time to be set... (1/10)[0m
+[0;32mI (701) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (701) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (711) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (721) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (831) wifi:connected with Airtel_Melvin_5G, aid = 1, channel 6, BW20, bssid = 5c:8c:30:bf:53:89[0m
+[0;32mI (831) wifi:security: WPA2-PSK, phy: bgn, rssi: -75[0m
+[0;32mI (841) wifi:pm start, type: 1[0m
+
+[0;32mI (841) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (851) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (961) wifi:<ba-add>idx:0 (ifx:0, 5c:8c:30:bf:53:89), tid:0, ssn:2, winSize:64[0m
+[0;32mI (2051) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2051) wifi: Wi-Fi Connected Successfully![0m
+[0;32mI (2691) time_sync: Waiting for system time to be set... (2/10)[0m
+[0;32mI (4691) time_sync: Time synchronized successfully![0m
+Current time: 14:27:07
+Current time: 14:27:08
+Current time: 14:27:09
+Current time: 14:27:10
+Current time: 14:27:11
+Current time: 14:27:12
+Current time: 14:27:13
+Current time: 14:27:14
+Current time: 14:27:15
+Current time: 14:27:16
+Current time: 14:27:17
+Current time: 14:27:18
+Current time: 14:27:19
+Current time: 14:27:20
+Current time: 14:27:21
+Current time: 14:27:22
+Current time: 14:27:23
+Current time: 14:27:24
+Current time: 14:27:25
+Current time: 14:27:26
+Current time: 14:27:27
+Current time: 14:27:28
+Current time: 14:27:29
+Current time: 14:27:30
+Current time: 14:27:31
+Current time: 14:27:32
+Current time: 14:27:33
+Current time: 14:27:34
+Current time: 14:27:35
+Current time: 14:27:36
+Current time: 14:27:37
+Current time: 14:27:38
+Current time: 14:27:39
+Current time: 14:27:40
+Current time: 14:27:41
+Current time: 14:27:42
+Current time: 14:27:43
+Current time: 14:27:44
+Current time: 14:27:45
+Current time: 14:27:46
+Current time: 14:27:47
+Current time: 14:27:48
+Current time: 14:27:49
+Current time: 14:27:50
+Current time: 14:27:51
+Current time: 14:27:52
+Current time: 14:27:53
+Current time: 14:27:54
+Current time: 14:27:55
+Current time: 14:27:56
+Current time: 14:27:57
+Current time: 14:27:58
+Current time: 14:27:59
+Current time: 14:28:00
+Current time: 14:28:01
+Current time: 14:28:02
+Current time: 14:28:03
+Current time: 14:28:04
+Current time: 14:28:05
+Current time: 14:28:06
+Current time: 14:28:07
+Current time: 14:28:08
+Current time: 14:28:09
+Current time: 14:28:10
+Current time: 14:28:11
+Current time: 14:28:12
+Current time: 14:28:13
+Current time: 14:28:14
+Current time: 14:28:15
+Current time: 14:28:16
+Current time: 14:28:17
+Current time: 14:28:18
+Current time: 14:28:19
+Current time: 14:28:20
+Current time: 14:28:21
+Current time: 14:28:22
+Current time: 14:28:23
+Current time: 14:28:24
+Current time: 14:28:25
+Current time: 14:28:26
+Current time: 14:28:27
+Current time: 14:28:28
+Current time: 14:28:29
+Current time: 14:28:30
+Current time: 14:28:31
+Current time: 14:28:32
+Current time: 14:28:33
+Current time: 14:28:34
+Current time: 14:28:35
+Current time: 14:28:36
+Current time: 14:28:37
+Current time: 14:28:38
+Current time: 14:28:39
+Current time: 14:28:40
+Current time: 14:28:41
+Current time: 14:28:42
+Current time: 14:28:43
+Current time: 14:28:44
+Current time: 14:28:45
+Current time: 14:28:46
+Current time: 14:28:47
+Current time: 14:28:48
+Current time: 14:28:49
+Current time: 14:28:50
+Current time: 14:28:51
+Current time: 14:28:52
+Current time: 14:28:53

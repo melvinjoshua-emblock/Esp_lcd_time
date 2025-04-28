@@ -1,0 +1,196 @@
+39) boot.esp32: SPI Mode �ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 27 2025 13:59:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=19080h (102528) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000290a8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=000290cc vaddr=3ffb0000 size=03f60h ( 16224) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=0002d034 vaddr=40080000 size=02fe4h ( 12260) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=883d8h (558040) map[0m
+[0;32mI (334) esp_image: segment 5: paddr=000b8400 vaddr=40082fe4 size=147dch ( 83932) load[0m
+[0;32mI (378) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (379) boot: Disabling RNG early entropy source...[0m
+[0;32mI (389) cpu_start: Multicore app[0m
+[0;32mI (397) cpu_start: Pro cpu start user code[0m
+[0;32mI (397) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (397) app_init: Application information:[0m
+[0;32mI (398) app_init: Project name:     esp-lcd-time[0m
+[0;32mI (402) app_init: App version:      1[0m
+[0;32mI (405) app_init: Compile time:     Apr 27 2025 13:58:41[0m
+[0;32mI (410) app_init: ELF file SHA256:  de35acc62...[0m
+[0;32mI (415) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (418) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (422) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (426) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (430) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (436) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (441) heap_init: At 3FFB8758 len 000278A8 (158 KiB): DRAM[0m
+[0;32mI (447) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (452) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (458) heap_init: At 400977C0 len 00008840 (34 KiB): IRAM[0m
+[0;32mI (464) spi_flash: detected chip: generic[0m
+[0;32mI (467) spi_flash: flash io: dio[0m
+[0;33mW (469) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (483) main_task: Started on CPU0[0m
+[0;32mI (493) main_task: Calling app_main()[0m
+[0;32mI (523) wifi:wifi driver task: 3ffc0650, prio:23, stack:6656, core=0[0m
+[0;32mI (533) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (533) wifi:wifi certification version: v7.0[0m
+[0;32mI (533) wifi:config NVS flash: enabled[0m
+[0;32mI (533) wifi:config nano formatting: disabled[0m
+[0;32mI (533) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (543) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (543) wifi:Init management short buffer num: 32[0m
+[0;32mI (553) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (553) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (563) wifi:Init static rx buffer num: 10[0m
+[0;32mI (563) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (563) wifi_init: rx ba win: 6[0m
+[0;32mI (573) wifi_init: accept mbox: 6[0m
+[0;32mI (573) wifi_init: tcpip mbox: 32[0m
+[0;32mI (573) wifi_init: udp mbox: 6[0m
+[0;32mI (583) wifi_init: tcp mbox: 6[0m
+[0;32mI (583) wifi_init: tcp tx win: 5760[0m
+[0;32mI (583) wifi_init: tcp rx win: 5760[0m
+[0;32mI (583) wifi_init: tcp mss: 1440[0m
+[0;32mI (593) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (593) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (603) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (613) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (683) wifi:mode : sta (d8:bc:38:e5:04:58)[0m
+[0;32mI (683) wifi:enable tsf[0m
+[0;32mI (703) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (703) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (713) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (723) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (823) wifi:connected with Airtel_Melvin_5G, aid = 2, channel 6, BW20, bssid = 5c:8c:30:bf:53:89[0m
+[0;32mI (833) wifi:security: WPA2-PSK, phy: bgn, rssi: -63[0m
+[0;32mI (833) wifi:pm start, type: 1[0m
+
+[0;32mI (833) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (873) wifi:<ba-add>idx:0 (ifx:0, 5c:8c:30:bf:53:89), tid:0, ssn:2, winSize:64[0m
+[0;32mI (893) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1993) esp_netif_handlers: sta ip: 192.168.1.8, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1993) wifi: Wi-Fi Connected Successfully![0m
+[0;32mI (10683) time_sync: Starting SNTP...[0m
+[0;32mI (10683) time_sync: Waiting for system time to be set... (1/10)[0m
+[0;32mI (12683) time_sync: Time synchronized successfully![0m
+10:29:28
+10:29:29
+10:29:30
+10:29:31
+10:29:32
+10:29:33
+10:29:34
+10:29:35
+10:29:36
+10:29:37
+10:29:38
+10:29:39
+10:29:40
+10:29:41
+10:29:42
+10:29:43
+10:29:44
+10:29:45
+10:29:46
+10:29:47
+10:29:48
+10:29:49
+10:29:50
+10:29:51
+10:29:52
+10:29:53
+10:29:54
+10:29:55
+10:29:56
+10:29:57
+10:29:58
+10:29:59
+10:30:00
+10:30:01
+10:30:02
+10:30:03
+10:30:04
+10:30:05
+10:30:06
+10:30:07
+10:30:08
+10:30:09
+10:30:10
+10:30:11
+10:30:12
+10:30:13
+10:30:14
+10:30:15
+10:30:16
+10:30:17
+10:30:18
+10:30:19
+10:30:20
+10:30:21
+10:30:22
+10:30:23
+10:30:24
+10:30:25
+10:30:26
+10:30:27
+10:30:28
+10:30:29
+10:30:30
+10:30:31
+10:30:32
+10:30:33
+10:30:34
+10:30:35
+10:30:36
+10:30:37
+10:30:38
+10:30:39
+10:30:40
+10:30:41
+10:30:42
+10:30:43
+10:30:44
+10:30:45
+10:30:46
+10:30:47
+10:30:48
+10:30:49
+10:30:50
+10:30:51
+10:30:52
+10:30:53
+10:30:54
+10:30:55
+10:30:56
+10:30:57
+10:30:58
+10:30:59
+10:31:00
+10:31:01
+10:31:02
+10:31:03
+10:31:04

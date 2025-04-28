@@ -1,0 +1,2 @@
+source C:/Users/imman/esp-lcd-time/build/bootloader/gdbinit/symbols
+source C:/Users/imman/esp-lcd-time/build/bootloader/gdbinit/connect
