@@ -27,19 +27,20 @@ This project demonstrates how to interface a 16x2 HD44780-based LCD with an ESP3
 ## ⚙️ Wiring Instructions
 ### 📌 LCD Pinout and ESP32 Connections
 
-LCD Pin | Name | Connect To
-1 | VSS | ESP32 GND
-2 | VDD | ESP32 5V
-3 | VO | GND (with 10kΩ resistor)
-4 | RS | GPIO4
-5 | RW | GND
-6 | EN | GPIO5
-11 | D4 | GPIO18
-12 | D5 | GPIO19
-13 | D6 | GPIO21
-14 | D7 | GPIO22
-15 | LED+ | 5V (through 220Ω resistor)
-16 | LED- | ESP32 GND
+|LCD Pin | Name | Connect To |
+________________________________
+|1 | VSS | ESP32 GND  |
+|2 | VDD | ESP32 5V |
+|3 | VO | GND (with 10kΩ resistor) |
+|4 | RS | GPIO4 |
+|5 | RW | GND|
+|6 | EN | GPIO5 |
+|11 | D4 | GPIO18 |
+|12 | D5 | GPIO19 |
+|13 | D6 | GPIO21 |
+|14 | D7 | GPIO22 |
+|15 | LED+ | 5V (through 220Ω resistor) |
+|16 | LED- | ESP32 GND |
 
 ## ✅ Important Notes:
 
