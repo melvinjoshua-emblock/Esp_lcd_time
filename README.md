@@ -86,8 +86,15 @@ The time will keep updating every second.
 ### 🎥 LCD Output Video
 ![▶️Watch video]([https://github.com/melvinjoshua-emblock/Esp_lcd_time/blob/3ec164f0cb797e5690db8dde27e65d2c4584da8e/Live%20time%20in%20serial%20moniter.jpg](https://github.com/melvinjoshua-emblock/Esp_lcd_time/blob/9110ff72d6986f91762f4526bfd8cf61d6935fea/Video%20of%20LCD%20ive%20time.mp4))
 
+## 🔧 Troubleshooting
+| Symptom             | Possible Cause                  | Solution                                      |
+|---------------------|----------------------------------|-----------------------------------------------|
+| Blocks (▒▒▒▒▒) only  | Contrast too high or low         | Use a 2.2kΩ resistor for VO (pin 3) adjustment |
+| Random characters   | Incorrect timing or floating RW | Ground RW (pin 5)                            |
+| Nothing displays    | LCD not powered or improper wiring | Double-check VCC/GND and data pin connections |
+| Dim display         | Using 3.3V instead of 5V         | Use 5V from ESP32 VIN pin for LCD power supply |
 
-✅ Author
+# ✅ Author
 
 Melvin Joshua
 
