@@ -12,17 +12,17 @@ This project demonstrates how to interface a 16x2 HD44780-based LCD with an ESP3
 ✅ Option to add further features like time editing (to be added later)
 
 ## 🛠️ Hardware Required
-ESP32 Dev Board
+ -ESP32 Dev Board
 
-16x2 LCD Display (HD44780)
+ -16x2 LCD Display (HD44780)
 
-Breadboard
+ -Breadboard
 
-Jumper Wires
+ -Jumper Wires
 
-USB Cable for ESP32
+ -USB Cable for ESP32
 
-220Ω and 10kΩ Resistor (for contrast control)
+ -220Ω and 10kΩ Resistor (for contrast control)
 
 ## ⚙️ Wiring Instructions
 ### 📌 LCD Pinout and ESP32 Connections
@@ -43,11 +43,11 @@ LCD Pin	Name	Connect To
 
 ## ✅ Important Notes:
 
-Do not connect VO (pin 3) directly to GND. Use a 10kΩ resistor to control contrast.
+ -Do not connect VO (pin 3) directly to GND. Use a 10kΩ resistor to control contrast.
 
-Always connect RW (pin 5) to GND for write-only operation.
+ -Always connect RW (pin 5) to GND for write-only operation.
 
-Supply 5V to LCD VCC and LED+. Using 3.3V may cause dim or no display.
+ -Supply 5V to LCD VCC and LED+. Using 3.3V may cause dim or no display.
 
 ## 🧑‍💻 How to Use
 # Step 1: Clone & Open Project
@@ -68,11 +68,11 @@ If wired correctly and flashed successfully, the LCD will display:
 The time will keep updating every second.
 
 ## 🧭 Expected Output
-On power-up: LCD backlight ON
+ -On power-up: LCD backlight ON
 
-After initialization: Current time will appear in the format HH:MM:SS on row 1
+ -After initialization: Current time will appear in the format HH:MM:SS on row 1
 
-The time will continuously update without flickering.
+ -The time will continuously update without flickering.
 
 ## 📸 Output Pictures and Video
 
