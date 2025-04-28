@@ -83,7 +83,7 @@ The time will continuously update without flickering.
 ![lcd](https://github.com/melvinjoshua-emblock/Esp_lcd_time/blob/3ec164f0cb797e5690db8dde27e65d2c4584da8e/Live%20time%20in%20LCD.jpg )
 
 ### 🎥 LCD Output Video
-![▶️Watch video](https://github.com/melvinjoshua-emblock/Esp_lcd_time/blob/3ec164f0cb797e5690db8dde27e65d2c4584da8e/Live%20time%20in%20serial%20moniter.jpg)
+![▶️Watch video]([https://github.com/melvinjoshua-emblock/Esp_lcd_time/blob/3ec164f0cb797e5690db8dde27e65d2c4584da8e/Live%20time%20in%20serial%20moniter.jpg](https://github.com/melvinjoshua-emblock/Esp_lcd_time/blob/9110ff72d6986f91762f4526bfd8cf61d6935fea/Video%20of%20LCD%20ive%20time.mp4))
 
 
 ✅ Author
