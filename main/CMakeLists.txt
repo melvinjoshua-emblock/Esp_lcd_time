@@ -3,4 +3,7 @@ idf_component_register(SRCS
     "wifi.c"
     "time_sync.c"
     "lcd.c"
+    "buttons.c"
+   
+   
     INCLUDE_DIRS ".")

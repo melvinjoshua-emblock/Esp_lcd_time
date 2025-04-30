@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "esp-lcd-time",
-    "project_version":    "1",
+    "project_version":    "c8255db-dirty",
     "project_path":       "C:/Users/imman/esp-lcd-time",
     "idf_path":           "C:/Users/imman/esp/v5.4.1/esp-idf",
     "build_dir":          "C:/Users/imman/esp-lcd-time/build",
@@ -1195,7 +1195,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "C:/Users/imman/esp-lcd-time/build/esp-idf/main/libmain.a",
-            "sources": [ "C:/Users/imman/esp-lcd-time/main/main.c", "C:/Users/imman/esp-lcd-time/main/wifi.c", "C:/Users/imman/esp-lcd-time/main/time_sync.c", "C:/Users/imman/esp-lcd-time/main/lcd.c" ],
+            "sources": [ "C:/Users/imman/esp-lcd-time/main/main.c", "C:/Users/imman/esp-lcd-time/main/wifi.c", "C:/Users/imman/esp-lcd-time/main/time_sync.c", "C:/Users/imman/esp-lcd-time/main/lcd.c", "C:/Users/imman/esp-lcd-time/main/buttons.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {

@@ -1,0 +1,11 @@
+CMake Error: Could not open file for write in copy operation C:/Users/imman/esp-lcd-time/build/CMakeFiles/git-data/grabRef.cmake.tmp
+CMake Error: : System Error: Permission denied
+CMake Error at C:/Users/imman/esp/v5.4.1/esp-idf/tools/cmake/third_party/GetGitRevisionDescription.cmake:80 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  C:/Users/imman/esp/v5.4.1/esp-idf/tools/cmake/third_party/GetGitRevisionDescription.cmake:93 (get_git_head_revision)
+  C:/Users/imman/esp/v5.4.1/esp-idf/tools/cmake/project.cmake:700 (git_describe)
+  CMakeLists.txt:6 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed
