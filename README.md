@@ -42,6 +42,13 @@ This project demonstrates how to interface a 16x2 HD44780-based LCD with an ESP3
 | 15      | LED+ | 5V (through 220Ω resistor)   |
 | 16      | LED- | ESP32 GND                   |
 
+## 📌 Button Connections
+
+| Button |Function	|GPIO Pin|
+|--------|---------|--------|
+|Hour    |Increment|	GPIO32|
+|Minute |Increment	|GPIO33|
+|Confirm| Set?Conform|	GPIO25|
 ## ✅ Important Notes:
 
  -Do not connect VO (pin 3) directly to GND. Use a 10kΩ resistor to control contrast.
@@ -74,6 +81,12 @@ The time will keep updating every second.
  -After initialization: Current time will appear in the format HH:MM:SS on row 1
 
  -The time will continuously update without flickering.
+ 
+ -Pressing the Confirm button enters edit mode:
+
+ ---Use Hour and Minute buttons to adjust time.
+
+ ---Press Confirm again to save changes and exit edit mode.
 
 ## 📸 Output Pictures and Video
 
@@ -85,6 +98,10 @@ The time will keep updating every second.
 
 ### 🎥 LCD Output Video
 ![▶️Watch video]([https://github.com/melvinjoshua-emblock/Esp_lcd_time/blob/3ec164f0cb797e5690db8dde27e65d2c4584da8e/Live%20time%20in%20serial%20moniter.jpg](https://github.com/melvinjoshua-emblock/Esp_lcd_time/blob/9110ff72d6986f91762f4526bfd8cf61d6935fea/Video%20of%20LCD%20ive%20time.mp4))
+
+### 🎥 ime change button Output Video
+![▶️Watch video]([https://github.com/melvinjoshua-emblock/Esp_lcd_time/blob/3ec164f0cb797e5690db8dde27e65d2c4584da8e/Live%20time%20in%20serial%20moniter.jpg](https://github.com/melvinjoshua-emblock/Esp_lcd_time/blob/9110ff72d6986f91762f4526bfd8cf61d6935fea/Video%20of%20LCD%20ive%20time.mp4))
+
 
 ## 🔧 Troubleshooting
 | Symptom             | Possible Cause                  | Solution                                      |
